@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/PreguntaPagina"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@drawable/futbol_background">
+    android:padding="16dp">
 
     <TextView
+        android:id="@+id/preguntaTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pregunta 1"
@@ -23,8 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center"
-        android:spacing="16dp">
+        android:gravity="center">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -40,6 +36,7 @@
                 android:layout_marginEnd="8dp"/>
 
             <TextView
+                android:id="@+id/opcionATextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Opción A"
@@ -62,6 +59,7 @@
                 android:layout_marginEnd="8dp"/>
 
             <TextView
+                android:id="@+id/opcionBTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Opción B"
@@ -83,6 +81,7 @@
                 android:layout_marginEnd="8dp"/>
 
             <TextView
+                android:id="@+id/opcionCTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Opción C"
@@ -91,7 +90,5 @@
                 android:textColor="@color/black"/>
         </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>
-
 
