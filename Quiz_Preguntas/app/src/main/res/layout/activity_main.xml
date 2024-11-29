@@ -1,51 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:id="@+id/paginaPrincipal"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <FrameLayout
-        android:id="@+id/ContenedorImagen"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="@color/black"
-        >
-        <ImageView
-            android:id="@+id/ImagenPresentacion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/foto_bombillas"/>
-        <TextView
-            android:id="@+id/TituloPresentacion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/titulo"
-            android:textSize="25sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:textStyle="bold"
-            android:textColor="#F6EACB"
-            android:background="@color/black"
-            />
-    </FrameLayout>
-    <LinearLayout
-        android:id="@+id/LayoutMainBoton"
+    tools:context=".proyecto.MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:padding="16dp"
-        android:background="#F6EACB"
-        android:gravity="center">
+        app:navGraph="@navigation/nav_graph"
+        app:defaultNavHost="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-        <Button
-            android:id="@+id/BotonComenzar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="¡Escoger un tema!"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            />
-    </LinearLayout>
-</LinearLayout>

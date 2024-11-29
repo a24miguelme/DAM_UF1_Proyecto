@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/futbol_background">
 
+    &lt;!&ndash; Pregunta TextView &ndash;&gt;
     <TextView
         android:id="@+id/preguntaTextView"
         android:layout_width="wrap_content"
@@ -15,6 +17,7 @@
         android:layout_gravity="center"
         android:textColor="@color/black"/>
 
+    &lt;!&ndash; Opciones de respuesta (Botones y TextViews) &ndash;&gt;
     <LinearLayout
         android:layout_marginTop="100dp"
         android:layout_width="match_parent"
@@ -22,6 +25,7 @@
         android:orientation="vertical"
         android:gravity="center">
 
+        &lt;!&ndash; Opción A &ndash;&gt;
         <LinearLayout
             android:orientation="horizontal"
             android:gravity="center"
@@ -34,7 +38,6 @@
                 android:layout_height="wrap_content"
                 android:text="A"
                 android:layout_marginEnd="8dp"/>
-
             <TextView
                 android:id="@+id/opcionATextView"
                 android:layout_width="wrap_content"
@@ -45,6 +48,7 @@
                 android:textColor="@color/black"/>
         </LinearLayout>
 
+        &lt;!&ndash; Opción B &ndash;&gt;
         <LinearLayout
             android:orientation="horizontal"
             android:gravity="center"
@@ -57,7 +61,6 @@
                 android:layout_height="wrap_content"
                 android:text="B"
                 android:layout_marginEnd="8dp"/>
-
             <TextView
                 android:id="@+id/opcionBTextView"
                 android:layout_width="wrap_content"
@@ -68,6 +71,7 @@
                 android:textColor="@color/black"/>
         </LinearLayout>
 
+        &lt;!&ndash; Opción C &ndash;&gt;
         <LinearLayout
             android:orientation="horizontal"
             android:gravity="center"
@@ -79,7 +83,6 @@
                 android:layout_height="wrap_content"
                 android:text="C"
                 android:layout_marginEnd="8dp"/>
-
             <TextView
                 android:id="@+id/opcionCTextView"
                 android:layout_width="wrap_content"
@@ -90,5 +93,19 @@
                 android:textColor="@color/black"/>
         </LinearLayout>
     </LinearLayout>
+</LinearLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/futbol_background">
+
+    <!-- Aquí va el RecyclerView que mostrará las preguntas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </LinearLayout>
 

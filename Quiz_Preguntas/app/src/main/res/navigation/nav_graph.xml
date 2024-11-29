@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_principal">
 
+    <!-- Definir el fragmento inicial -->
+    <fragment
+        android:id="@+id/fragment_principal"
+        android:name="com.example.quiz_preguntas.proyecto.PrincipalFragment"
+        android:label="Fragment Principal">
+
+        <action
+            android:id="@+id/action_fragment_principal_to_eleccionFragment"
+            app:destination="@id/eleccionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/eleccionFragment"
+        android:name="com.example.quiz_preguntas.proyecto.EleccionFragment"
+        android:label="Elección" />
 </navigation>
