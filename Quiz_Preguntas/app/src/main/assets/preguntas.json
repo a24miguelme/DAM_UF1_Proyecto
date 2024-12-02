@@ -15,7 +15,7 @@
         },
         {
           "pregunta": "¿Cual es la selección con mayor número de Eurocopas?",
-          "opciones": ["Inglaterra", "Epaña", "Alemania"],
+          "opciones": ["Inglaterra", "España", "Alemania"],
           "respuestaCorrecta": 1
         }
       ]

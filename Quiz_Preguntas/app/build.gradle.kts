@@ -37,6 +37,7 @@ android {
 
 dependencies {
 
+    implementation ("com.google.code.gson:gson:2.8.8")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

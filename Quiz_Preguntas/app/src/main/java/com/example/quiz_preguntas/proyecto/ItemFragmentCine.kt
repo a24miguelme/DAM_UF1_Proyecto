@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.quiz_preguntas.R
 
-class itemFragment: Fragment(R.layout.item_pregunta) {
+class ItemFragmentCine: Fragment(R.layout.item_pregunta_cine) {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.item_pregunta, container, false)
+        return inflater.inflate(R.layout.item_pregunta_cine, container, false)
     }
 }

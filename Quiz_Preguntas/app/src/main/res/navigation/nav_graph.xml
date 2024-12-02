@@ -4,7 +4,6 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/fragment_principal">
 
-    <!-- Definir el fragmento inicial -->
     <fragment
         android:id="@+id/fragment_principal"
         android:name="com.example.quiz_preguntas.proyecto.PrincipalFragment"
@@ -14,9 +13,24 @@
             android:id="@+id/action_fragment_principal_to_eleccionFragment"
             app:destination="@id/eleccionFragment" />
     </fragment>
-
     <fragment
         android:id="@+id/eleccionFragment"
         android:name="com.example.quiz_preguntas.proyecto.EleccionFragment"
-        android:label="Elección" />
+        android:label="Elección" >
+        <action
+            android:id="@+id/action_eleccionFragment_to_preguntasFragment"
+            app:destination="@id/preguntasFragment" />
+        <action
+            android:id="@+id/action_eleccionFragment_to_cinePreguntas"
+            app:destination="@id/cinePreguntas" />
+    </fragment>
+    <fragment
+        android:id="@+id/preguntasFragment"
+        android:name="com.example.quiz_preguntas.proyecto.FutbolPreguntas"
+        android:label="PreguntasFragment" />
+    <fragment
+        android:id="@+id/cinePreguntas"
+        android:name="com.example.quiz_preguntas.proyecto.CinePreguntas"
+        android:label="CinePreguntas" />
+
 </navigation>

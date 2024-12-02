@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/btnOpcion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opción 1" />
+
+    <Button
+        android:id="@+id/btnOpcion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opción 2" />
+
+    <Button
+        android:id="@+id/btnOpcion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opción 3" />
+</LinearLayout>
