@@ -23,6 +23,12 @@
         <action
             android:id="@+id/action_eleccionFragment_to_cinePreguntas"
             app:destination="@id/cinePreguntas" />
+        <action
+            android:id="@+id/action_eleccionFragment_to_artePreguntas"
+            app:destination="@id/artePreguntas" />
+        <action
+            android:id="@+id/action_eleccionFragment_to_geografiaPreguntasPreguntas2"
+            app:destination="@id/geografiaPreguntasPreguntas2" />
     </fragment>
     <fragment
         android:id="@+id/preguntasFragment"
@@ -32,5 +38,13 @@
         android:id="@+id/cinePreguntas"
         android:name="com.example.quiz_preguntas.proyecto.CinePreguntas"
         android:label="CinePreguntas" />
+    <fragment
+        android:id="@+id/artePreguntas"
+        android:name="com.example.quiz_preguntas.proyecto.ArtePreguntas"
+        android:label="ArtePreguntas" />
+    <fragment
+        android:id="@+id/geografiaPreguntasPreguntas2"
+        android:name="com.example.quiz_preguntas.proyecto.GeografiaPreguntasPreguntas"
+        android:label="GeografiaPreguntasPreguntas" />
 
 </navigation>

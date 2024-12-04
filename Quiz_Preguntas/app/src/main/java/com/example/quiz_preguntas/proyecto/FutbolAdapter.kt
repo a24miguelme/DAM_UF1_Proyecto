@@ -24,7 +24,7 @@ data class Preguntas(val preguntas: List<Tema>)
 class FutbolAdapter(private val listaPreguntas: List<Pregunta>) : RecyclerView.Adapter<FutbolAdapter.PreguntaViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PreguntaViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_pregunta_futbol, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_pregunta, parent, false)
         return PreguntaViewHolder(view)
     }
 

@@ -32,6 +32,18 @@ class EleccionFragment : Fragment(R.layout.fragment_eleccion) {
 
             findNavController().navigate(R.id.action_eleccionFragment_to_cinePreguntas)
         }
+        val botonArte = view.findViewById<Button>(R.id.botonEleccion3)
+
+        botonArte.setOnClickListener {
+
+            findNavController().navigate(R.id.action_eleccionFragment_to_artePreguntas)
+        }
+        val botonGeografia = view.findViewById<Button>(R.id.botonEleccion4)
+
+        botonGeografia.setOnClickListener {
+
+            findNavController().navigate(R.id.action_eleccionFragment_to_geografiaPreguntasPreguntas2)
+        }
 
         return view
     }

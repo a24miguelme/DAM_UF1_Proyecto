@@ -11,14 +11,14 @@ import com.example.quiz_preguntas.R
 import com.google.gson.Gson
 
 
-class CinePreguntas : Fragment(R.layout.fragment_cine_preguntas) {
+class GeografiaPreguntasPreguntas : Fragment(R.layout.fragment_geografia_preguntas) {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_cine_preguntas, container, false)
-        val recyclerView = view.findViewById<RecyclerView>(R.id.recycler_view2)
+        val view = inflater.inflate(R.layout.fragment_geografia_preguntas, container, false)
+        val recyclerView = view.findViewById<RecyclerView>(R.id.recycler_view4)
 
         val preguntas = cargarPreguntasDesdeJson()
 
@@ -38,9 +38,9 @@ class CinePreguntas : Fragment(R.layout.fragment_cine_preguntas) {
             val gson = Gson()
             val data = gson.fromJson(json, Preguntas::class.java)
 
-            val cine = data.preguntas.find { it.tema == "Cine" }
-           if (cine != null) {
-                preguntas.addAll(cine.preguntas)
+            val geografia = data.preguntas.find { it.tema == "Geografia" }
+            if (geografia != null) {
+                preguntas.addAll(geografia.preguntas)
             }
 
         } catch (e: Exception) {
