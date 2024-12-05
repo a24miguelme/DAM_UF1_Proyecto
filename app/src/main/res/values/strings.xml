@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Quiz_Preguntas</string>
+    <string name="titulo">Quiz de preguntas multitema</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/EleccionPagina"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F6EACB">
+
+    <TextView
+        android:id="@+id/TituloEleccion"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Escoge un tema!"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/contenidoEleccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        >
+
+        <FrameLayout
+            android:id="@+id/botones_imagenes1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            >
+
+            <ImageView
+                android:id="@+id/ImagenEleccion1"
+                android:layout_width="390dp"
+                android:layout_height="100dp"
+                android:src="@drawable/foto_futbol"
+                android:scaleType="centerCrop"
+                 />
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/botonEleccion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fútbol" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/botones_imagenes2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="50dp">
+
+            <ImageView
+                android:id="@+id/ImagenEleccion2"
+                android:layout_width="390dp"
+                android:layout_height="100dp"
+                android:src="@drawable/foto_cine"
+                android:scaleType="centerCrop"
+                />
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/botonEleccion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cine" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/botones_imagenes3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="50dp">
+
+            <ImageView
+                android:id="@+id/ImagenEleccion3"
+                android:layout_width="390dp"
+                android:layout_height="100dp"
+                android:src="@drawable/foto_arte"
+                android:scaleType="centerCrop"
+                />
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/botonEleccion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arte" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/botones_imagenes4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ImagenEleccion4"
+                android:layout_width="390dp"
+                android:layout_height="100dp"
+                android:src="@drawable/foto_geografia"
+                android:scaleType="centerCrop"
+                />
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/botonEleccion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geografía" />
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>
