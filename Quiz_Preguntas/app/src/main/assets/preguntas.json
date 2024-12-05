@@ -1,0 +1,84 @@
+{
+  "preguntas": [
+    {
+      "tema": "Futbol",
+      "preguntas": [
+        {
+          "pregunta": "¿Cuantos balones de oro tiene CR7?",
+          "opciones": ["7", "5", "4"],
+          "respuestaCorrecta": 1
+        },
+        {
+          "pregunta": "¿Quien ganó la champions en 2012?",
+          "opciones": ["Chealsea FC", "FC BArcelona", "Real Madrid"],
+          "respuestaCorrecta": 0
+        },
+        {
+          "pregunta": "¿Cual es la selección con mayor número de Eurocopas?",
+          "opciones": ["Inglaterra", "España", "Alemania"],
+          "respuestaCorrecta": 1
+        }
+      ]
+    },
+    {
+      "tema": "Cine",
+      "preguntas": [
+        {
+          "pregunta": "¿Quien fue el productor de Gran Torino?",
+          "opciones": ["Clint Eastwood", "Al Paccino", "Juan Mendoza"],
+          "respuestaCorrecta": 0
+        },
+        {
+          "pregunta": "¿Como se llama el personaje principal de Fight Club?",
+          "opciones": ["No se sabe", "Tyler Durden", "Felipe Sexto"],
+          "respuestaCorrecta": 2
+        },
+        {
+          "pregunta": "¿Como se llama el villano del Rey León?",
+          "opciones": ["Mufasa", "Scar", "Pedro Picapiedra"],
+          "respuestaCorrecta": 1
+        }
+      ]
+    },
+    {
+      "tema": "Arte",
+      "preguntas": [
+        {
+          "pregunta": "¿Quien pintó la Mona Lisa?",
+          "opciones": ["Picasso", "Mozart", "Da Vinci"],
+          "respuestaCorrecta": 2
+        },
+        {
+          "pregunta": "¿Quién fue el promotor del movimiento Dadaísta?",
+          "opciones": ["Tristan Tzara", "Marcel Duchamp ", "Max Ernst "],
+          "respuestaCorrecta": 0
+        },
+        {
+          "pregunta": "¿Cómo se llama el museo más reconocido de París?",
+          "opciones": ["Orsay", "Museo del Prado", "Louvre"],
+          "respuestaCorrecta": 2
+        }
+      ]
+    },
+    {
+      "tema": "Geografia",
+      "preguntas": [
+        {
+          "pregunta": "¿Cuál es la capital de gambia?",
+          "opciones": ["Banjul", "Serrekunda", "Brikama"],
+          "respuestaCorrecta": 0
+        },
+        {
+          "pregunta": "En que país se encuentra la ciudad Reikiavik",
+          "opciones": ["Noruega", "Islandia", "Finlandia"],
+          "respuestaCorrecta": 1
+        },
+        {
+          "pregunta": "¿Cuál es el río más grande del planeta?",
+          "opciones": ["Amazonas", "Volga", "Nilo"],
+          "respuestaCorrecta": 2
+        }
+      ]
+    }
+  ]
+}
